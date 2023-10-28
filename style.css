@@ -1,101 +1,154 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Tilt Neon', sans-serif !important; ;
-}
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    /* background: #90f2e8; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 .wrap {
-    width: 370px;
-    padding: 25px 30px;
-    border-radius: 7px;
-    background: #f1f1f1;
-    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  width: 400px;
+  padding: 25px 30px;
+  border-radius: 7px;
+  /* background: #f1f1f1; */
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
 .wrap header {
-    font-size: 28px;
-    font-weight: 500;
-    text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
 }
 .wrap form {
-    margin: 35px 0 20px;
+  margin: 35px 0 20px;
 }
 form .row {
-    margin: 35px 0 20px;
+  margin: 35px 0 20px;
 }
 form.row {
-    display: flex;
-    margin-bottom: 20px;
-    flex-direction: column;
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
 }
 form .row label {
-    font-size: 18px;
-    margin-bottom: 5px;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 form .row:nth-child(2) label {
-    font-size: 17px;
+  font-size: 17px;
 }
 form :where(textarea, select, button) {
-    outline: none;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 5px;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
 }
 
 form .row textarea {
-    resize: none;
-    height: 110px;
-    font-size: 15px;
-    padding: 8px 10px;
-    border: 1px solid #998;
+  resize: none;
+  height: 110px;
+  font-size: 15px;
+  padding: 8px 10px;
+  border: 1px solid #998;
 }
 
 form .row textarea::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 
 form .row .outer {
-    height: 47px;
-    display: flex;
-    /* padding: 0 10px; */
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    border: 1px solid #998;
+  height: 47px;
+  display: flex;
+  /* padding: 0 10px; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #998;
 }
 
 form .row .select {
-    font-size: 14px;
-    background: none;
+  font-size: 14px;
+  background: none;
 }
 
 form .row select::-webkit-scrollbar-track {
-    background: #fff;
+  background: #fff;
 }
 
 form .row select::-webkit-scrollbar-thumb {
-    background: #889;
-    border-radius: 8px;
-    border-right: 2px solid #fff;
+  background: #889;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
 }
-
-form button {
-    height: 52px;
-    color: black;
-    font-size: 17px;
-    cursor: pointer;
-    margin-top: 10px;
-    background: #c4c2c2;
-    transition: 0.3s ease;
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./assets/img/back.jpg);
+  background-position: center;
+  background-size: cover;
 }
-
-form button:hover {
-    background: #C2DED1;
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 0px;
+  border: 1px solid #ffffff40;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.image .profile-pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.data h2{
+  font-size: 33px;
+  font-weight: 600;
+}
+span{
+  font-size: 18px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.row .info{
+  text-align: center;
+  padding: 0 20px;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.buttons .btn{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  white-space: nowrap;
+  background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+}
+.buttons .btn:hover{
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
 }
