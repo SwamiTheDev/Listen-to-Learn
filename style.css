@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tilt Neon', sans-serif !important; ;
 }
 body {
     display: flex;
@@ -64,7 +64,7 @@ form .row textarea::-webkit-scrollbar {
 form .row .outer {
     height: 47px;
     display: flex;
-    padding: 0 10px;
+    /* padding: 0 10px; */
     align-items: center;
     justify-content: center;
     border-radius: 5px;
@@ -88,11 +88,11 @@ form .row select::-webkit-scrollbar-thumb {
 
 form button {
     height: 52px;
-    color: palegoldenrod;
+    color: black;
     font-size: 17px;
     cursor: pointer;
     margin-top: 10px;
-    background: #F47C7C;
+    background: #c4c2c2;
     transition: 0.3s ease;
 }
 
