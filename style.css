@@ -11,3 +11,18 @@ body {
     min-height: 100vh;
     /* background: #90f2e8; */
 }
+.wrap {
+    width: 370px;
+    padding: 25px 30px;
+    border-radius: 7px;
+    background: #f1f1f1;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+.wrap header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrap form {
+    margin: 35px 0 20px;
+}
