@@ -6,37 +6,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Profle Card UI Design | CoderGirl </title>
+    <title> Listen To Learn || swamithedev</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!---Custom Css File!--->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="main">
-        <div class="profile-card">
+    <nav>
 
+        <header>Text to speech converter</header>
+    </nav>
+
+    <div class="container">
+        <div class="card">
             <div class="wrap">
-                <header>Text to speech converter</header>
                 <form action="#">
                     <div class="row">
                         <label>Enter text</label>
                         <textarea></textarea>
                     </div>
                     <div class="row">
-                        <label>Select voice</label>
+                        <p class="Voice_label">Select the Voice</p>
+                        <!-- <label >Select voice</label> -->
                         <div class="outer">
                             <select></select>
                         </div>
                     </div>
 
-                    <div class="buttons">
-                        <a href="#" class="btn">Convert</a>
-                        <!-- <a href="#" class="btn">Follow Me</a> -->
-                    </div>
                 </form>
             </div>
+            <!-- <button class="btn">Get Started</button> -->
+            <button href="#" class="btn">Convert <i class="bi bi-box-arrow-right"
+                    style="font-weight: bolder; font-size: larger;"></i></button>
         </div>
-    </section>
+        <div class="blob"></div>
+    </div>
+    <footer style="height: 10vh; text-align: center;letter-spacing: 1px;">
+        <p>Desgined and Developed by <a href="https://swamithedev.vercel.app" target="_blank"
+                style="text-decoration: NONE;letter-spacing: 3px; color: #fa709a; font-weight: bolder;">SWAMITHEDEV</a>
+        </p>
+    </footer>
     <script src="./script.js"></script>
 
 </body>
